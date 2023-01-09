@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NotesMaui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:NotesMaui.Views"
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <ShellContent
+            Title="Записочки"
+            ContentTemplate="{DataTemplate views:AllNotesPage}"
+            Icon="icon_notes.png"/>
+        <ShellContent 
+            Title="О приложении"
+            ContentTemplate="{DataTemplate views:AboutPage}"
+            Icon="icon_about.png"/>
+    </TabBar>
+   
+
+</Shell>
